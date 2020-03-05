@@ -22,7 +22,7 @@ int _scale = 1;
 extern "C" int __declspec(dllexport) __stdcall  Init(int& outCameraWidth, int& outCameraHeight)
 {
 	// Load LBP face cascade.
-	if (!_faceCascade.load("lbpcascade_frontalface.xml"))
+	if (!_faceCascade.load("lbpcascade_frontalface_improved.xml"))
 		return -1;
 
 	// Open the stream.
